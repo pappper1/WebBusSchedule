@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<div style="display: flex; justify-content: space-between; align-items: center;">
+    <h1>
+        Расписание автобуса: {{ route_number }}
+    </h1>
+    <button onclick="location.href='{% url 'index' %}';" class="btn btn-primary">Главная страница</button>
+</div>
+<div class="schedule">
+    {% for hour, minutes in hours_minutes %}
+    <div class="schedule-item">
+        <strong>Час: </strong>{{ hour }}<br>
+        <strong>Минуты: </strong>{{ minutes }}
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

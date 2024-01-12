@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>
+    Расписание автобусов
+</h1>
+<form method="POST" id="RouteForm">
+  {% csrf_token %}
+  <select class="form-select" aria-label="Default select example" id="mySelect" name="selectedOption">
+    <option selected>Выберите маршрут</option>
+    {% for route in routes %}
+    <option value="{{ route }}">{{ route }}</option>
+    {% endfor %}
+  </select>
+  <button type="submit" class="btn btn-outline-primary btn-lg" id="myButton">Выбрать</button>
+</form>
+
+{% endblock %}
