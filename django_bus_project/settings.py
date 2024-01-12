@@ -81,17 +81,13 @@ WSGI_APPLICATION = "django_bus_project.wsgi.application"
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': env.str('DB_NAME'),
-        'USER': env.str('DB_USER'),
-        'PASSWORD': env.str('DB_PASSWORD'),
-        'HOST': env.str('DB_HOST'),
-        'PORT': 5432,
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
 
-CSRF_TRUSTED_ORIGINS = ['https://e28e-89-64-92-90.ngrok-free.app', 'https://0794-89-64-92-90.ngrok-free.app']
+CSRF_TRUSTED_ORIGINS = ['https://ded6-89-64-92-90.ngrok-free.app ']
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
