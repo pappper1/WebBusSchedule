@@ -15,6 +15,7 @@ print(get_random_secret_key())
 10. Совершать миграции для базы данных - python manage.py makemigrations, python manage.py migrate
 11. Запустить сервер - python manage.py runserver
 
+EN
 Installation:
 1. Download the zip archive from this repository and unzip it
 2. Install python 3.10 - python 3.11(https://www.python.org/downloads/) | Linux: sudo apt install python3.10
