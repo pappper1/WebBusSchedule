@@ -10,6 +10,8 @@ RU
 from django.core.management.utils import get_random_secret_key
 
 print(get_random_secret_key())
+![image](https://github.com/pappper1/WebBusSchedule/assets/120128585/f3c2e8fe-ef24-4313-80ea-374e14f35615)
+
 
 8. Запустить файл и скопировать из командной строки сгенерированый ключ - python key.py
 9. Создать файл .env в корне проекта и прописать одну строчку SECRET_KEY = тут_ваш_секретный_ключ
@@ -29,6 +31,8 @@ Installation:
 from django.core.management.utils import get_random_secret_key
 
 print(get_random_secret_key())
+![image](https://github.com/pappper1/WebBusSchedule/assets/120128585/e10f5a46-54de-4ef1-80e3-f17e8edb3e1f)
+
 
 8. Run the file and copy the generated key from the command line - python key.py
 9. Create an .env file in the root of the project and write one line SECRET_KEY = here_your_secret_key
