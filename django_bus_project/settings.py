@@ -27,7 +27,7 @@ env.read_env()
 SECRET_KEY = env.str("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -52,6 +52,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+
 ]
 
 ROOT_URLCONF = "django_bus_project.urls"
@@ -87,7 +88,7 @@ DATABASES = {
 }
 
 
-CSRF_TRUSTED_ORIGINS = ['https://ded6-89-64-92-90.ngrok-free.app ']
+CSRF_TRUSTED_ORIGINS = ['https://db9d-89-64-92-90.ngrok-free.app']
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
